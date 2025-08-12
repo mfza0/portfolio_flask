@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Hey, I am <span class="highlight">Mufeeza</span></h1>
+            <h2>A Passionate Web Developer</h2>
+            <p class="hero-description">
+                Welcome to my digital space! I'm a dedicated web developer with a passion for creating 
+                beautiful, functional websites and learning cutting-edge technologies.
+            </p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('projects') }}" class="btn btn-primary">View My Work</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/dev1.webp') }}" alt="Mufeeza - Web Developer">
+        </div>
+    </div>
+</section>
+
+<section class="skills-preview">
+    <div class="container">
+        <h2>What I Do</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive and interactive user interfaces with HTML, CSS, and JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Building robust server-side applications with Python and Flask</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <h3>Continuous Learning</h3>
+                <p>Always expanding my knowledge in Machine Learning, DSA, and Django</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

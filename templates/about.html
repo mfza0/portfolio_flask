@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}About - Mufeeza{% endblock %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="container">
+        <h1>About Me</h1>
+        <p class="lead">Passionate about creating digital experiences through code</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>My Journey</h2>
+                <p>
+                    I'm Mufeeza, a dedicated web developer with a passion for creating beautiful and 
+                    functional web applications. My journey in technology started with curiosity and 
+                    has grown into a deep love for problem-solving through code.
+                </p>
+                <p>
+                    Currently pursuing my studies at Caset College of Computer Science, I'm constantly 
+                    learning and applying new technologies to build better digital experiences.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/concentrating-coding.png') }}" alt="Coding">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section">
+    <div class="container">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h3>Current Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Flask</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Learning</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag learning">Machine Learning</span>
+                    <span class="skill-tag learning">Data Structures & Algorithms</span>
+                    <span class="skill-tag learning">Django</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-section">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-icon">
+                    <img src="{{ url_for('static', filename='images/caset.png') }}" alt="Caset College">
+                </div>
+                <div class="education-content">
+                    <h3>Caset College of Computer Science</h3>
+                    <p class="education-period">2022 - 2025</p>
+                    <p>Bachelor's in Computer Science</p>
+                    <p>CGPA 9.4</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <img src="{{ url_for('static', filename='images/OIP.jpg') }}" alt="Green Valley Educational Institute">
+                </div>
+                <div class="education-content">
+                    <h3>Green Valley Educational Institute</h3>
+                    <p class="education-period">2006 - 2019</p>
+                    <p>Primary and Secondary Education</p>
+                    <p>94%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
