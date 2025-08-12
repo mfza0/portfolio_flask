@@ -3,7 +3,9 @@
 Prerequisites:
 
 Python 3.9 or higher
+
 Git (for cloning)
+
 Command Prompt/Terminal access
 
 # 1. Clone the repository
